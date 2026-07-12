@@ -1,0 +1,44 @@
+Carpeta de imágenes de la aplicación
+=====================================
+
+La aplicación funciona perfectamente sin ninguna imagen aquí: mientras
+no coloques los archivos, se dibuja automáticamente un marcador de
+posición (plato + "Imagen no disponible") para que nunca se rompa la
+interfaz. Cuando quieras que se vean las fotos reales, solo copia los
+archivos con el nombre exacto indicado abajo, sin necesidad de tocar
+ni una línea de código: la clase gui.Theme los detecta solos.
+
+1) Logo de la cabecera (círculo junto a "EL SABROSO POLLO")
+   Archivo:  logo.png
+   Tamaño sugerido: 96x96 px (cuadrado, PNG, fondo transparente)
+   Ruta final:      JavaApplication4/src/images/logo.png
+
+2) Fotos de cada plato de la carta (pestaña "Nuevo Pedido")
+   Carpeta:  platos/
+   Nombre de archivo: <id>.png  o  <id>.jpg   (usa el mismo id que en
+   services/DatosService.java, método cargarDatosIniciales())
+   Tamaño sugerido: 640x400 px (horizontal)
+   Ejemplos:
+     platos/1.png   -> Pollo a la Brasa 1/4
+     platos/2.png   -> Pollo a la Brasa 1/2
+     platos/3.png   -> Pollo a la Brasa Entero
+     platos/4.png   -> Combo Personal
+     platos/5.png   -> Combo Familiar
+     platos/6.png   -> Broaster 1/4
+     platos/7.png   -> Alitas BBQ (8 unid.)
+     platos/8.png   -> Chicharrón de Pollo
+     platos/9.png   -> Papas Fritas (porción)
+     platos/10.png  -> Arroz Chaufa de Pollo
+     platos/11.png  -> Ensalada Criolla
+     platos/12.png  -> Ensalada Mixta
+     platos/13.png  -> Gaseosa 500ml
+     platos/14.png  -> Gaseosa 1.5L
+     platos/15.png  -> Chicha Morada 1L
+     platos/16.png  -> Mazamorra Morada
+
+IMPORTANTE (NetBeans): estas imágenes deben quedar dentro de la
+carpeta "src" del proyecto (junto a los paquetes model, gui, etc.)
+para que NetBeans las incluya como recursos del classpath al
+compilar/ejecutar. Si ya tienes el proyecto abierto, solo arrastra o
+copia los archivos a esta misma carpeta desde el explorador de
+archivos del sistema operativo y luego pulsa "Clean and Build".
